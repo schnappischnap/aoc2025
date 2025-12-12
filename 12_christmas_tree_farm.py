@@ -1,6 +1,3 @@
-import re
-
-
 def part_1(data):
     return sum(int(line[:2]) // 3 * int(line[3:5]) // 3 >= sum(int(i) for i in line[7:].split()) for line in data[30:])
 
